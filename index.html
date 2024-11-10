@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="container">
+
+            <button class="TryAgain" onclick="tryAgain()">Again</button>
+            <button class="TryAgain" onclick="reset()">Reset</button>
+            <h1 class="text1">Guess The Number!</h1>
+            <p class="cornertext">(Between 1 and 20)</p>
+
+        </div>
+        <div class="hr1">
+            <div class="qsmarkbox">
+                <h1>?</h1>
+            </div>
+        </div>
+        <div class="gamearea">
+            <div class="rightarea">
+                <input type="number" class="guessednumber" placeholder="00">
+                <button class="checknumber" onclick="check()">Check</button>
+            </div>
+
+            <div class="leftarea">
+                <h3 class="replacebleText">Start Guessing....
+                    <br><br>
+                </h3>
+                <p>Score: <span class="remainingscore">20</span></p>
+                <p>HighScore: <span class="highscore">0</span></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

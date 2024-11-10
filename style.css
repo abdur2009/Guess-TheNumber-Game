@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.TryAgain {
+    height: 55px;
+    width: 120px;
+    font-size: 30px;
+}
+
+.cornertext {
+    font-size: 30px;
+}
+
+.text1 {
+    margin-top: 60px;
+    /* border-top: 1px solid blue; */
+    font-size: 80px;
+}
+
+.cornertext {
+    font-size: 30px;
+}
+
+.text1 {
+    margin-top: 60px;
+    /* border-top: 1px solid blue; */
+    font-size: 80px;
+}
+
+.hr1 {
+    margin-top: 100px;
+    height: 4px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qsmarkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 110px;
+    color: black;
+    background-color: white;
+    font-size: 60px;
+}
+
+/* MEDIA QUERIES */
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .TryAgain {
+        height: 30px;
+        width: 30px;
+        font-size: 10px;
+    }
+
+    .cornertext {
+        font-size: 10px !important;
+    }
+
+    .text1 {
+        margin-top: 60px;
+        /* border-top: 1px solid yellow; */
+        text-align: center;
+        font-size: 23px !important;
+    }
+
+    .qsmarkbox {
+        height: 50px;
+        width: 55px;
+        font-size: 20px;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .TryAgain {
+        height: 40px;
+        width: 60px;
+        font-size: 20px;
+    }
+
+    .cornertext {
+        font-size: 15px !important;
+    }
+
+    .text1 {
+        margin-top: 50px;
+        /* border-top: 1px solid green !important; */
+        /* Apply blue border for medium screens */
+        font-size: 40px !important;
+    }
+
+    .qsmarkbox {
+        height: 60px;
+        width: 65px;
+        font-size: 30px;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .TryAgain {
+        height: 50px;
+        width: 80px;
+        font-size: 25px;
+    }
+
+    .cornertext {
+        font-size: 20px !important;
+    }
+
+    .text1 {
+        margin-top: 50px;
+        /* border-top: 1px solid red !important; */
+        /* Apply red border for medium screens */
+        font-size: 55px !important;
+    }
+
+    .qsmarkbox {
+        height: 80px;
+        width: 85px;
+        font-size: 45px;
+    }
+}
+
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .TryAgain {
+        height: 55px;
+        width: 90px;
+        font-size: 28px;
+    }
+
+    .cornertext {
+        font-size: 25px !important;
+    }
+
+    .text1 {
+        margin-top: 50px;
+        /* border-top: 1px solid rgb(162, 0, 255) !important; */
+        /* Apply red border for medium screens */
+        font-size: 70px !important;
+    }
+}
+
+
+
+
+/* NOW HAVE TO WORK ON GAME AREA */
+
+.gamearea {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.rightarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftarea {
+    font-size: 50px;
+}
+
+.guessednumber {
+    height: 80px;
+    width: 160px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 2px solid white !important;
+}
+
+.checknumber {
+    margin-top: 20px;
+    width: 120px;
+    height: 70px;
+    z-index: 3;
+}
+
+/* MEDIA QUERIES */
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .leftarea {
+        font-size: 18px;
+    }
+
+    .gamearea {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .rightarea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .guessednumber {
+        height: 50px;
+        width: 90px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 2px solid white !important;
+    }
+
+    .checknumber {
+        margin-top: 20px;
+        width: 70px;
+        height: 40px;
+
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .leftarea {
+        font-size: 25px;
+    }
+
+    .guessednumber {
+        height: 50px;
+        width: 90px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .checknumber {
+        margin-top: 20px;
+        width: 70px;
+        height: 40px;
+
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .leftarea {
+        font-size: 35px;
+    }
+
+    .guessednumber {
+        height: 60px;
+        width: 110px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .checknumber {
+        font-size: 25px;
+        margin-top: 20px;
+        width: 90px;
+        height: 50px;
+
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .leftarea {
+        font-size: 40px;
+    }
+
+    .guessednumber {
+        height: 60px;
+        width: 140px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .checknumber {
+        margin-top: 20px;
+        width: 120px;
+        height: 60px;
+    }
+}
+.special{
+    background-color: red;
+    color: black;
+    /* margin: auto; */
+}
+
+
+/* Responsiveness added */
+
+
+/* <---CSS COMPLETE---> */
